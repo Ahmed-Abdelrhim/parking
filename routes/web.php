@@ -56,3 +56,10 @@ Route::group(['middleware' => 'prevent-back-history'], function () { // Prevent 
     require __DIR__ . '/auth.php';
 
 });
+
+
+// git add .
+// git commit -m ""
+
+// git pull
+// git push
