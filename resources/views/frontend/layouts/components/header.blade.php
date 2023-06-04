@@ -8,19 +8,19 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav bookmark-icons">
-                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html"
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#"
                                                           data-bs-toggle="tooltip" data-bs-placement="bottom"
                                                           title="Email"><i class="ficon" data-feather="mail"></i></a>
                 </li>
-                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-bs-toggle="tooltip"
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip"
                                                           data-bs-placement="bottom" title="Chat"><i class="ficon"
                                                                                                      data-feather="message-square"></i></a>
                 </li>
-                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calendar.html"
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#"
                                                           data-bs-toggle="tooltip" data-bs-placement="bottom"
                                                           title="Calendar"><i class="ficon" data-feather="calendar"></i></a>
                 </li>
-                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-bs-toggle="tooltip"
+                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip"
                                                           data-bs-placement="bottom" title="Todo"><i class="ficon"
                                                                                                      data-feather="check-square"></i></a>
                 </li>
@@ -79,7 +79,7 @@
 
 
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="page-account-settings-account.html"><i class="me-50"
+                    <a class="dropdown-item" href="#"><i class="me-50"
                                                                                           data-feather="settings"></i>
                         Settings</a>
                     <a class="dropdown-item" href="#">
@@ -89,10 +89,10 @@
                     <a class="dropdown-item" href="#">
                         <i class="me-50" data-feather="help-circle"></i> FAQ
                     </a>
-                    <a class="dropdown-item" href="#" onclick="document.preventDefault(); document.getElementById(#logout-form).submit();">
+                    <a class="dropdown-item" href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                         <i class="me-50" data-feather="power"></i>
                         Logout
-                        <form method="post" action="{{route('logout')}}" id="logout-form" style="display: none"></form>
+                        <form method="post" action="{{route('logout')}}" id="logout-form" style="display: none">@csrf</form>
                     </a>
                 </div>
             </li>
@@ -104,7 +104,7 @@
             <h6 class="section-label mt-75 mb-0">Files</h6>
         </a></li>
     <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
-                                   href="app-file-manager.html">
+                                   href="#">
             <div class="d-flex">
                 <div class="me-75"><img src="" alt="png" height="32"></div>
                 <div class="search-data">
@@ -115,7 +115,7 @@
             <small class="search-data-size me-50 text-muted">&apos;17kb</small>
         </a></li>
     <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
-                                   href="app-file-manager.html">
+                                   href="#">
             <div class="d-flex">
                 <div class="me-75"><img src="" alt="png" height="32"></div>
                 <div class="search-data">
@@ -126,7 +126,7 @@
             <small class="search-data-size me-50 text-muted">&apos;11kb</small>
         </a></li>
     <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
-                                   href="app-file-manager.html">
+                                   href="#">
             <div class="d-flex">
                 <div class="me-75"><img src="" alt="png" height="32"></div>
                 <div class="search-data">
@@ -137,7 +137,7 @@
             <small class="search-data-size me-50 text-muted">&apos;150kb</small>
         </a></li>
     <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100"
-                                   href="app-file-manager.html">
+                                   href="#">
             <div class="d-flex">
                 <div class="me-75"><img src="" alt="png" height="32"></div>
                 <div class="search-data">
@@ -150,7 +150,7 @@
             <h6 class="section-label mt-75 mb-0">Members</h6>
         </a></li>
     <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
-                                   href="app-user-view-account.html">
+                                   href="#">
             <div class="d-flex align-items-center">
                 <div class="avatar me-75"><img src="" alt="png" height="32"></div>
                 <div class="search-data">
@@ -169,7 +169,7 @@
             </div>
         </a></li>
     <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
-                                   href="app-user-view-account.html">
+                                   href="#">
             <div class="d-flex align-items-center">
                 <div class="avatar me-75"><img src="" alt="png" height="32"></div>
                 <div class="search-data">
@@ -179,7 +179,7 @@
             </div>
         </a></li>
     <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100"
-                                   href="app-user-view-account.html">
+                                   href="#">
             <div class="d-flex align-items-center">
                 <div class="avatar me-75"><img src="" alt="png" height="32"></div>
                 <div class="search-data">
