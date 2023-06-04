@@ -91,8 +91,11 @@
             <li class=" nav-item"><a class="d-flex align-items-center" href=""><i data-feather="check-square"></i><span
                         class="menu-title text-truncate" data-i18n="Todo">Reports</span></a>
             </li>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1f48ac1fccf290ad503de5ed4189f850ab10c4b6
         </ul>
     </div>
 </div>

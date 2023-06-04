@@ -56,5 +56,8 @@ Route::group(['middleware' => 'prevent-back-history'], function () { // Prevent 
     require __DIR__ . '/auth.php';
 
 });
+// git add .
+// git commit -m ""
 
-// service container : manage class dependencies
+// git pull
+// git push
