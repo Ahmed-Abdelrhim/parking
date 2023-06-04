@@ -61,9 +61,6 @@
 
             <li class=" nav-item"><a class="d-flex align-items-center" href=""><i data-feather="check-square"></i><span class="menu-title text-truncate" data-i18n="Todo">Reports</span></a>
             </li>
-
-
-
         </ul>
     </div>
 </div>

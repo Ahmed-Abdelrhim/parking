@@ -36,7 +36,7 @@ class RoleController extends Controller
     {
         $permissions = $request->all();
         unset($permissions['_token']);
-        return $permissions = array_values($permissions);
+        $permissions = array_values($permissions);
 
         $this->roleRepository->saveRolePermissions($request , $id);
         $notifications = array('message' => 'Data Saved Success' , 'alert-type' => 'success');
