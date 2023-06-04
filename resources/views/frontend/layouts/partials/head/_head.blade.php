@@ -25,3 +25,10 @@
 
 
 <link rel="stylesheet" href="{{ asset('assets/modules/css/iziToast.min.css') }}">
+
+@yield('css')
+<link rel="stylesheet" type="text/css" href="{{asset('assets/css/apexcharts.css')}}">
+
+
+{{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chart-apex.min.css')}}">--}}
+{{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/apexcharts.css')}}">--}}

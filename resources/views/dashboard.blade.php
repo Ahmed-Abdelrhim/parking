@@ -1,4 +1,5 @@
 @extends('frontend.app.master')
+
 @section('main-content')
     <!-- BEGIN: Content-->
     <div class="app-content content ">
@@ -15,23 +16,27 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="card card-congratulations">
                                 <div class="card-body text-center">
-                                    <img src="../../../app-assets/images/elements/decore-left.png" class="congratulations-img-left" alt="card-img-left" />
-                                    <img src="../../../app-assets/images/elements/decore-right.png" class="congratulations-img-right" alt="card-img-right" />
+                                    <img src="{{asset('images/decore-left.png')}}"
+                                         class="congratulations-img-left" alt="card-img-left"/>
+                                    <img src="{{asset('images/decore-right.png')}}"
+                                         class="congratulations-img-right" alt="card-img-right"/>
                                     <div class="avatar avatar-xl bg-primary shadow">
                                         <div class="avatar-content">
                                             <i data-feather="award" class="font-large-1"></i>
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <h1 class="mb-1 text-white">Congratulations John,</h1>
+                                        <h1 class="mb-1 text-white">Congratulations {{auth()->user()->name}},</h1>
                                         <p class="card-text m-auto w-75">
-                                            You have done <strong>57.6%</strong> more sales today. Check your new badge in your profile.
+                                            You have done <strong>57.6%</strong> more sales today. Check your new badge
+                                            in your profile.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Greetings Card ends -->
+
 
                         <!-- Subscribers Chart Card starts -->
                         <div class="col-lg-3 col-sm-6 col-12">
@@ -49,6 +54,7 @@
                             </div>
                         </div>
                         <!-- Subscribers Chart Card ends -->
+
 
                         <!-- Orders Chart Card starts -->
                         <div class="col-lg-3 col-sm-6 col-12">
@@ -74,7 +80,8 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row pb-50">
-                                        <div class="col-sm-6 col-12 d-flex justify-content-between flex-column order-sm-1 order-2 mt-1 mt-sm-0">
+                                        <div
+                                            class="col-sm-6 col-12 d-flex justify-content-between flex-column order-sm-1 order-2 mt-1 mt-sm-0">
                                             <div class="mb-1 mb-sm-0">
                                                 <h2 class="fw-bolder mb-25">2.7K</h2>
                                                 <p class="card-text fw-bold mb-2">Avg Sessions</p>
@@ -85,12 +92,16 @@
                                             </div>
                                             <button type="button" class="btn btn-primary">View Details</button>
                                         </div>
-                                        <div class="col-sm-6 col-12 d-flex justify-content-between flex-column text-end order-sm-2 order-1">
+                                        <div
+                                            class="col-sm-6 col-12 d-flex justify-content-between flex-column text-end order-sm-2 order-1">
                                             <div class="dropdown chart-dropdown">
-                                                <button class="btn btn-sm border-0 dropdown-toggle p-50" type="button" id="dropdownItem5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <button class="btn btn-sm border-0 dropdown-toggle p-50" type="button"
+                                                        id="dropdownItem5" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
                                                     Last 7 Days
                                                 </button>
-                                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem5">
+                                                <div class="dropdown-menu dropdown-menu-end"
+                                                     aria-labelledby="dropdownItem5">
                                                     <a class="dropdown-item" href="#">Last 28 Days</a>
                                                     <a class="dropdown-item" href="#">Last Month</a>
                                                     <a class="dropdown-item" href="#">Last Year</a>
@@ -99,30 +110,34 @@
                                             <div id="avg-sessions-chart"></div>
                                         </div>
                                     </div>
-                                    <hr />
+                                    <hr/>
                                     <div class="row avg-sessions pt-50">
                                         <div class="col-6 mb-2">
                                             <p class="mb-50">Goal: $100000</p>
                                             <div class="progress progress-bar-primary" style="height: 6px">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="50" aria-valuemax="100" style="width: 50%"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="50"
+                                                     aria-valuemin="50" aria-valuemax="100" style="width: 50%"></div>
                                             </div>
                                         </div>
                                         <div class="col-6 mb-2">
                                             <p class="mb-50">Users: 100K</p>
                                             <div class="progress progress-bar-warning" style="height: 6px">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100" style="width: 60%"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                     aria-valuemin="60" aria-valuemax="100" style="width: 60%"></div>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <p class="mb-50">Retention: 90%</p>
                                             <div class="progress progress-bar-danger" style="height: 6px">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="70" aria-valuemax="100" style="width: 70%"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                     aria-valuemin="70" aria-valuemax="100" style="width: 70%"></div>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <p class="mb-50">Duration: 1yr</p>
                                             <div class="progress progress-bar-success" style="height: 6px">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="90" aria-valuemax="100" style="width: 90%"></div>
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                     aria-valuemin="90" aria-valuemax="100" style="width: 90%"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -137,7 +152,9 @@
                                 <div class="card-header d-flex justify-content-between pb-0">
                                     <h4 class="card-title">Support Tracker</h4>
                                     <div class="dropdown chart-dropdown">
-                                        <button class="btn btn-sm border-0 dropdown-toggle p-50" type="button" id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button class="btn btn-sm border-0 dropdown-toggle p-50" type="button"
+                                                id="dropdownItem4" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
                                             Last 7 Days
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownItem4">
@@ -184,6 +201,11 @@
         </div>
     </div>
     <!-- END: Content-->
+@endsection
+
+@section('scripts')
+    <script src="{{asset('assets/js/apexcharts.min.js')}}"></script>
+    <script src="{{asset('assets/js/dashboard-analytics.js')}}"></script>
 @endsection
 
 {{--<x-app-layout>--}}
