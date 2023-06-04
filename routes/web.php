@@ -56,3 +56,5 @@ Route::group(['middleware' => 'prevent-back-history'], function () { // Prevent 
     require __DIR__ . '/auth.php';
 
 });
+
+// service container : manage class dependencies
