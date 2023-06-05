@@ -81,7 +81,7 @@
                                                             <i class="fa fa-2x fa-edit mr-2"
                                                                style="color: #7367f0;"></i>
                                                         </a>
-                                                        <a href="#" title="delete" style="margin-left: 20px;">
+                                                        <a href="#" title="delete" style="margin-left: 20px;" onclick="deleteConfirmation({{$role->id}})">
                                                             <i class="fa fa-2x fa-trash" style="color: #f00;"></i>
                                                         </a>
 
@@ -112,5 +112,7 @@
 @endsection
 
 @section('javascript')
+    <!-- SweetAlert2 -->
+    <!-- SweetAlert2 -->
     <script src="{{asset('frontend/js/shared/jquery.dataTables.min.js')}}"></script>
 @endsection

@@ -43,4 +43,11 @@ class RoleController extends Controller
         return redirect(RouteServiceProvider::Role)->with($notifications);
     }
 
+    public function destroy($id)
+    {
+        return response()->json(['success' => true , 'status' => 200]);
+        $this->roleRepository->destroy($id);
+        $notifications = array('message' => 'Data Deleted Success', 'alert-type' =>'success');
+        return redirect(route(RouteServiceProvider::Role))->with($notifications);
+    }
 }

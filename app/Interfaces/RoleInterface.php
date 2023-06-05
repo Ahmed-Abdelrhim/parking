@@ -8,5 +8,5 @@ interface RoleInterface {
 
     public function edit();
 
-    public function destroy();
+    public function destroy($id);
 }

@@ -61,8 +61,10 @@ class RoleRepository implements RoleInterface {
         // TODO :: edit a role here
     }
 
-    public function destroy()
+    public function destroy($id)
     {
+        $role = Role::query()->find($id);
+        $role->delete();
         // TODO :: delete a role here
     }
 }
