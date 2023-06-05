@@ -4,6 +4,11 @@
 <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
 <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="PIXINVENT">
+
+<meta charset="utf-8">
+<!-- csrf-token -->
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
 <title>Q-Parking</title>
 <link rel="apple-touch-icon" href="{{asset('')}}">
 <link rel="shortcut icon" type="image/x-icon" href="{{asset('')}}">
@@ -29,6 +34,7 @@
 @yield('css')
 <link rel="stylesheet" type="text/css" href="{{asset('assets/css/apexcharts.css')}}">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.5.1/sweetalert2.min.css">
 
 {{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chart-apex.min.css')}}">--}}
 {{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/apexcharts.css')}}">--}}

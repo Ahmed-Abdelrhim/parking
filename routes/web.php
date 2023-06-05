@@ -43,6 +43,7 @@ Route::group(['middleware' => 'prevent-back-history'], function () { // Prevent 
             Route::get('role/index', 'index')->name('role.index');
             Route::get('role/show/{id}', 'show')->name('role.show');
             Route::post('role/save/permissions/{id}', 'savePermission')->name('role.save.permissions');
+            Route::post('role/delete/{id}', 'destroy')->name('role.delete');
         });
 
         //Users·······
