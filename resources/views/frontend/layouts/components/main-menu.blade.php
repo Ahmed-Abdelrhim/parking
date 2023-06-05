@@ -1,7 +1,7 @@
 <!-- BEGIN: Main Menu-->
-<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+<div :class="{ -translate-x-full: !open}" class="main-menu menu-fixed menu-light menu-accordion menu-shadow" x-data="{open : true}" data-scroll-to-active="true" >
     <div class="navbar-header">
-        <ul class="nav navbar-nav flex-row">
+        <ul class="nav navbar-nav flex-row" >
             <li class="nav-item me-auto"><a class="navbar-brand" href=""><span class="brand-logo">
                             <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                  xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
@@ -29,19 +29,21 @@
                                             <polygon id="Path-2" fill="#000000" opacity="0.049999997"
                                                      points="69.3922914 32.4202615 32.8435758 70.5039241 54.0490008 16.1851325"></polygon>
                                             <polygon id="Path-21" fill="#000000" opacity="0.099999994"
-                                                     points="69.3922914 32.4202615 32.8435758 70.5039241 58.3683556 20.7402338"></polygon>
+                                                    points="69.3922914 32.4202615 32.8435758 70.5039241 58.3683556 20.7402338"></polygon>
                                             <polygon id="Path-3" fill="url(#linearGradient-2)" opacity="0.099999994"
-                                                     points="101.428699 0 83.0667527 94.1480575 130.378721 47.0740288"></polygon>
+                                                    points="101.428699 0 83.0667527 94.1480575 130.378721 47.0740288"></polygon>
                                         </g>
                                     </g>
                                 </g>
                             </svg></span>
                     <h2 class="brand-text">Q-Parking</h2>
                 </a></li>
-            <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
-                        class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
-                        class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc"
-                        data-ticon="disc"></i></a></li>
+            <li class="nav-item nav-toggle">
+                <a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse">
+                    <i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i>
+                    <i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc"data-ticon="disc"></i>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="shadow-bottom"></div>
@@ -49,7 +51,7 @@
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
             <li class=" nav-item"><a class="d-flex align-items-center" href="{{route('admin.dashboard')}}"><i
                         data-feather="home"></i><span class="menu-title text-truncate"
-                                                      data-i18n="Dashboards">Dashboards</span><span
+                                                    data-i18n="Dashboards">Dashboards</span><span
                         class="badge badge-light-warning rounded-pill ms-auto me-1">2</span></a>
             </li>
             <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Apps &amp; Pages</span><i
@@ -64,7 +66,7 @@
             <li class=" nav-item"><a class="d-flex align-items-center" href="{{route('admin.role.index')}}">
                     <i data-feather="message-square"></i><span class="menu-title text-truncate" data-i18n="Chat">
     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-life-buoy"><circle
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-toggle="collapse"class="feather feather-life-buoy"><circle
             cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17">
         </line>
         <line
