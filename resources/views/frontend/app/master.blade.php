@@ -6,6 +6,8 @@
     @include('frontend.layouts.partials.head._head')
     @include('frontend.layouts.components.custom_style')
 
+
+
 </head>
 <!-- END: Head-->
     <body class="vertical-layout vertical-menu-modern  navbar-floating footer-static   menu-collapsed" data-open="click"
