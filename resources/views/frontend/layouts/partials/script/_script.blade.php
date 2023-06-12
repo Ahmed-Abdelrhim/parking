@@ -19,9 +19,6 @@
 
 @yield('scripts')
 
-
-
-
 <script>
         $(window).on('load', function() {
             if (feather) {
@@ -89,10 +86,8 @@
             cancelButtonText: "No, cancel!",
             reverseButtons: !0
         }).then(function (e) {
-
             if (e.value === true) {
                 var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
-
                 $.ajax({
                     type: 'POST',
                     url: "{{url('Admin/role/delete')}}/" + id,
@@ -110,11 +105,9 @@
                         }
                     }
                 });
-
             } else {
                 e.dismiss;
             }
-
         }, function (dismiss) {
             return false;
         })
