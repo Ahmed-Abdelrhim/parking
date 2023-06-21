@@ -32,6 +32,9 @@ class RoleRepository implements RoleInterface {
         $this->data['permissionArray'] = $permissionArray;
         $this->data['permissions']     = $role->permissions->pluck('id' , 'id');
         $this->data['permissionList']  = $listPermissionsArray;
+
+
+
         return $this->data;
     }
 

@@ -36,5 +36,5 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.5.1/sweetalert2.min.css">
 
-{{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chart-apex.min.css')}}">--}}
+{{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/chart-apex.min.css')}}"> [done] --}}
 {{--<link rel="stylesheet" type="text/css" href="{{asset('assets/css/apexcharts.css')}}">--}}
